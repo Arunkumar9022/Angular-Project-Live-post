@@ -1,0 +1,22 @@
+<!-- <p>post works!</p> -->
+<!-- <div class="container"> -->
+<h1>{{post?.title}}</h1>
+<p>{{post?.description}} Nature is a British weekly scientific journal founded and based in londonpublicatiion,England.
+    As a Multidisciplinary Nature features peer reviewed research from variety of academic disciplines,mainly in
+    science
+    and
+    technology</p>
+<!-- <img src="../../assets/images/Beach.jpg" class="img-fluid" /> -->
+<img src={{post?.imagePath}} class="img-fluid" style="height: 500px;"/>
+
+<!-- <p >Author:test@test.com</p> -->
+<p >Author:{{post?.author}}</p>
+<p>Date:{{post?.datetimeCreated}}</p>
+<p>Date:7/7/2023</p>
+<!-- <p>Likes:{{post?.numberofLikes}}</p> -->
+<div>
+    <button class="btn btn-success text-white w-25 px-3 py-2 mb-3" type="button" (click)="likePost()"><i class="fas fa-thumbs-up "></i>Likes:{{post?.numberofLikes}}</button>
+</div>
+<button class="btn btn-primary btn-lg rounded-2 w-25" (click)="onEdit()">Edit</button>
+<button class="btn btn-danger rounded-3 btn-lg mx-2 w-25" (click)="onDelete()">Delete</button>
+<!-- </div> -->

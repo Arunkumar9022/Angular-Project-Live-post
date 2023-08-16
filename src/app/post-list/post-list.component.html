@@ -1,0 +1,7 @@
+<!-- <p>post-list works!</p> -->
+<!-- <app-post [post]="listOfPosts[0]"></app-post>
+<app-post [post]="listOfPosts[1]"></app-post>
+<app-post [post]="listOfPosts[2]"></app-post> -->
+<h1>Latest Posts</h1>
+<app-post *ngFor="let post of listOfPosts;let i=index;" [post]="post" [index]="i"></app-post>
+<!-- <app-post [post]="listOfPosts[3]"></app-post> -->
